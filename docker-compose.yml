@@ -1,0 +1,9 @@
+version: '3'
+services:
+  server:
+    image: coturn
+    network_mode: "host"
+    restart: always
+    logging: 
+      options: 
+        max-size: "1g"
